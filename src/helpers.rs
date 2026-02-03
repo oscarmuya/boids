@@ -1,12 +1,5 @@
 use bevy::prelude::*;
 
-pub fn get_avoidance_force(position: Vec2, neighbor: Vec2) {
-    let dxy = position - neighbor;
-    let distance = position.distance_squared(neighbor);
-
-    let force = dxy / distance;
-}
-
 pub fn point_in_arc(
     center: Vec2,
     radius: f32,
@@ -18,9 +11,9 @@ pub fn point_in_arc(
     // 1. Check if point is within radius
     let dx = point.x - center.x;
     let dy = point.y - center.y;
-    let distance = (dx * dx + dy * dy).sqrt();
+    let dxy = dx * dx + dy * dy;
 
-    if distance > radius {
+    if dxy > radius * radius {
         return false;
     }
 
