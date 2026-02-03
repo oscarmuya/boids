@@ -2,7 +2,11 @@
 
 This project is a classic Boids simulation implemented in Rust using the Bevy game engine. It demonstrates the emergent behavior of a flock of birds, where simple local rules create complex, life-like patterns.
 
-![Boids Screenshot](httpsio.io)
+
+
+https://github.com/user-attachments/assets/3db08870-ef9d-4b3c-9494-f9f2aa8d315d
+
+
 
 ## What are Boids?
 
